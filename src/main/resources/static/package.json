@@ -1,0 +1,21 @@
+{
+  "name": "static",
+  "version": "0.1.0",
+  "homepage": "./",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.0",
+    "popper.js": "^1.14.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "0.9.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

@@ -1,0 +1,61 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.6.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'groovy'
+	id "com.github.node-gradle.node" version "2.2.3"
+
+}
+
+group = 'fr.spironet'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.codehaus.groovy:groovy'
+	implementation 'org.codehaus.groovy:groovy-json'
+	implementation 'com.squareup.okhttp3:okhttp:4.5.0'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+}
+
+test {
+	useJUnitPlatform()
+}
+
+/** excludes some npm stuff from artifact */
+bootJar {
+	exclude("**/static/node_modules")
+	exclude("**/static/npm-v*")
+	exclude("**/static/package*json")
+	exclude("**/static/public")
+	exclude("**/static/src")
+}
+
+/** npm stuff */
+node {
+	version = '14.0.0'
+	npmVersion = '6.14.4'
+	download = true
+	npmWorkDir = file("${project.rootDir}/src/main/resources/static")
+}
+
+task appNpmInstall(type: NpmTask) {
+	description = "Installs dependencies from package.json"
+	workingDir = file("${node.npmWorkDir}")
+	args = ['install']
+}
+
+task appNpmRunBuild(type: NpmTask) {
+	description = "Compiles my app"
+	workingDir = file("${node.npmWorkDir}")
+	args = ['run', 'build']
+}
+
+assemble.dependsOn appNpmInstall, appNpmRunBuild

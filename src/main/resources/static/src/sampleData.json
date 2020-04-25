@@ -1,0 +1,683 @@
+[
+  {
+    "platform": "java",
+    "lastSeen": "2020-04-25T08:06:16Z",
+    "numComments": 0,
+    "userCount": 484,
+    "stats": {
+      "24h": [
+        [
+          1587718800,
+          349
+        ],
+        [
+          1587722400,
+          19
+        ],
+        [
+          1587726000,
+          78
+        ],
+        [
+          1587729600,
+          884
+        ],
+        [
+          1587733200,
+          526
+        ],
+        [
+          1587736800,
+          57
+        ],
+        [
+          1587740400,
+          112
+        ],
+        [
+          1587744000,
+          14
+        ],
+        [
+          1587747600,
+          25
+        ],
+        [
+          1587751200,
+          37
+        ],
+        [
+          1587754800,
+          47
+        ],
+        [
+          1587758400,
+          60
+        ],
+        [
+          1587762000,
+          9
+        ],
+        [
+          1587765600,
+          4
+        ],
+        [
+          1587769200,
+          5
+        ],
+        [
+          1587772800,
+          80
+        ],
+        [
+          1587776400,
+          63
+        ],
+        [
+          1587780000,
+          143
+        ],
+        [
+          1587783600,
+          28
+        ],
+        [
+          1587787200,
+          8
+        ],
+        [
+          1587790800,
+          23
+        ],
+        [
+          1587794400,
+          2
+        ],
+        [
+          1587798000,
+          23
+        ],
+        [
+          1587801600,
+          1
+        ]
+      ]
+    },
+    "culprit": "org.georchestra.security.Proxy in handleRequest",
+    "title": "Downstream server returned a status code which could be an error. Statuscode: 403, reason: Forbidden",
+    "id": "1615193469",
+    "assignedTo": null,
+    "logger": "org.georchestra.security",
+    "type": "default",
+    "annotations": [],
+    "metadata": {
+      "title": "Downstream server returned a status code which could be an error. Statuscode: 403, reason: Forbidden"
+    },
+    "status": "unresolved",
+    "subscriptionDetails": null,
+    "isPublic": false,
+    "hasSeen": true,
+    "shortId": "GEORCHESTRA-2",
+    "shareId": null,
+    "firstSeen": "2020-04-16T15:46:25Z",
+    "count": "8370",
+    "permalink": "https://sentry.io/organizations/camptocamp/issues/1615193469/",
+    "level": "warning",
+    "isSubscribed": false,
+    "isBookmarked": false,
+    "project": {
+      "platform": "java",
+      "slug": "georchestra",
+      "id": "5193327",
+      "name": "georchestra"
+    },
+    "statusDetails": {}
+  },
+  {
+    "platform": "java",
+    "lastSeen": "2020-04-25T07:06:40Z",
+    "numComments": 0,
+    "userCount": 11,
+    "stats": {
+      "24h": [
+        [
+          1587718800,
+          0
+        ],
+        [
+          1587722400,
+          0
+        ],
+        [
+          1587726000,
+          0
+        ],
+        [
+          1587729600,
+          14
+        ],
+        [
+          1587733200,
+          2
+        ],
+        [
+          1587736800,
+          2
+        ],
+        [
+          1587740400,
+          0
+        ],
+        [
+          1587744000,
+          1
+        ],
+        [
+          1587747600,
+          0
+        ],
+        [
+          1587751200,
+          0
+        ],
+        [
+          1587754800,
+          0
+        ],
+        [
+          1587758400,
+          0
+        ],
+        [
+          1587762000,
+          1
+        ],
+        [
+          1587765600,
+          1
+        ],
+        [
+          1587769200,
+          0
+        ],
+        [
+          1587772800,
+          1
+        ],
+        [
+          1587776400,
+          1
+        ],
+        [
+          1587780000,
+          65
+        ],
+        [
+          1587783600,
+          6
+        ],
+        [
+          1587787200,
+          1
+        ],
+        [
+          1587790800,
+          0
+        ],
+        [
+          1587794400,
+          1
+        ],
+        [
+          1587798000,
+          21
+        ],
+        [
+          1587801600,
+          0
+        ]
+      ]
+    },
+    "culprit": "org.geoserver.ows.Dispatcher in service",
+    "title": "ServiceException: No service: ( ows )",
+    "id": "1625313807",
+    "assignedTo": null,
+    "logger": "org.geoserver.ows",
+    "type": "error",
+    "annotations": [],
+    "metadata": {
+      "function": "service",
+      "type": "ServiceException",
+      "value": "No service: ( ows )",
+      "filename": "Dispatcher.java"
+    },
+    "status": "unresolved",
+    "subscriptionDetails": null,
+    "isPublic": false,
+    "hasSeen": false,
+    "shortId": "GEORCHESTRA-V",
+    "shareId": null,
+    "firstSeen": "2020-04-22T11:36:12Z",
+    "count": "344",
+    "permalink": "https://sentry.io/organizations/camptocamp/issues/1625313807/",
+    "level": "error",
+    "isSubscribed": false,
+    "isBookmarked": false,
+    "project": {
+      "platform": "java",
+      "slug": "georchestra",
+      "id": "5193327",
+      "name": "georchestra"
+    },
+    "statusDetails": {}
+  },
+  {
+    "platform": "java",
+    "lastSeen": "2020-04-25T03:34:33Z",
+    "numComments": 0,
+    "userCount": 0,
+    "stats": {
+      "24h": [
+        [
+          1587718800,
+          0
+        ],
+        [
+          1587722400,
+          0
+        ],
+        [
+          1587726000,
+          0
+        ],
+        [
+          1587729600,
+          54
+        ],
+        [
+          1587733200,
+          0
+        ],
+        [
+          1587736800,
+          0
+        ],
+        [
+          1587740400,
+          0
+        ],
+        [
+          1587744000,
+          0
+        ],
+        [
+          1587747600,
+          0
+        ],
+        [
+          1587751200,
+          2
+        ],
+        [
+          1587754800,
+          0
+        ],
+        [
+          1587758400,
+          0
+        ],
+        [
+          1587762000,
+          0
+        ],
+        [
+          1587765600,
+          0
+        ],
+        [
+          1587769200,
+          0
+        ],
+        [
+          1587772800,
+          0
+        ],
+        [
+          1587776400,
+          0
+        ],
+        [
+          1587780000,
+          3
+        ],
+        [
+          1587783600,
+          11
+        ],
+        [
+          1587787200,
+          0
+        ],
+        [
+          1587790800,
+          0
+        ],
+        [
+          1587794400,
+          0
+        ],
+        [
+          1587798000,
+          0
+        ],
+        [
+          1587801600,
+          0
+        ]
+      ]
+    },
+    "culprit": "org.georchestra.mapfishapp.ws.UpLoadGeoFileController in resolveException",
+    "title": "Request method 'HEAD' not supported",
+    "id": "1615395178",
+    "assignedTo": null,
+    "logger": "org.georchestra.mapfishapp.ws",
+    "type": "default",
+    "annotations": [],
+    "metadata": {
+      "title": "Request method 'HEAD' not supported"
+    },
+    "status": "unresolved",
+    "subscriptionDetails": null,
+    "isPublic": false,
+    "hasSeen": false,
+    "shortId": "GEORCHESTRA-8",
+    "shareId": null,
+    "firstSeen": "2020-04-16T18:00:03Z",
+    "count": "293",
+    "permalink": "https://sentry.io/organizations/camptocamp/issues/1615395178/",
+    "level": "error",
+    "isSubscribed": false,
+    "isBookmarked": false,
+    "project": {
+      "platform": "java",
+      "slug": "georchestra",
+      "id": "5193327",
+      "name": "georchestra"
+    },
+    "statusDetails": {}
+  },
+  {
+    "platform": "java",
+    "lastSeen": "2020-04-25T07:06:22Z",
+    "numComments": 0,
+    "userCount": 2,
+    "stats": {
+      "24h": [
+        [
+          1587718800,
+          0
+        ],
+        [
+          1587722400,
+          0
+        ],
+        [
+          1587726000,
+          0
+        ],
+        [
+          1587729600,
+          0
+        ],
+        [
+          1587733200,
+          0
+        ],
+        [
+          1587736800,
+          0
+        ],
+        [
+          1587740400,
+          0
+        ],
+        [
+          1587744000,
+          0
+        ],
+        [
+          1587747600,
+          0
+        ],
+        [
+          1587751200,
+          0
+        ],
+        [
+          1587754800,
+          0
+        ],
+        [
+          1587758400,
+          0
+        ],
+        [
+          1587762000,
+          0
+        ],
+        [
+          1587765600,
+          0
+        ],
+        [
+          1587769200,
+          0
+        ],
+        [
+          1587772800,
+          0
+        ],
+        [
+          1587776400,
+          0
+        ],
+        [
+          1587780000,
+          4
+        ],
+        [
+          1587783600,
+          0
+        ],
+        [
+          1587787200,
+          0
+        ],
+        [
+          1587790800,
+          0
+        ],
+        [
+          1587794400,
+          0
+        ],
+        [
+          1587798000,
+          1
+        ],
+        [
+          1587801600,
+          0
+        ]
+      ]
+    },
+    "culprit": "org.geoserver.ows.Dispatcher in dispatch",
+    "title": "ServiceException: Could not determine geoserver request from http request org.geoserver.monitor.MonitorServletReque...",
+    "id": "1625944757",
+    "assignedTo": null,
+    "logger": "org.geoserver.ows",
+    "type": "error",
+    "annotations": [],
+    "metadata": {
+      "function": "dispatch",
+      "type": "ServiceException",
+      "value": "Could not determine geoserver request from http request org.geoserver.monitor.MonitorServletRequest@1292995a",
+      "filename": "Dispatcher.java"
+    },
+    "status": "unresolved",
+    "subscriptionDetails": null,
+    "isPublic": false,
+    "hasSeen": false,
+    "shortId": "GEORCHESTRA-1C",
+    "shareId": null,
+    "firstSeen": "2020-04-22T18:00:27Z",
+    "count": "13",
+    "permalink": "https://sentry.io/organizations/camptocamp/issues/1625944757/",
+    "level": "error",
+    "isSubscribed": false,
+    "isBookmarked": false,
+    "project": {
+      "platform": "java",
+      "slug": "georchestra",
+      "id": "5193327",
+      "name": "georchestra"
+    },
+    "statusDetails": {}
+  },
+  {
+    "platform": "java",
+    "lastSeen": "2020-04-25T05:35:08Z",
+    "numComments": 0,
+    "userCount": 29,
+    "stats": {
+      "24h": [
+        [
+          1587718800,
+          18
+        ],
+        [
+          1587722400,
+          2
+        ],
+        [
+          1587726000,
+          0
+        ],
+        [
+          1587729600,
+          206
+        ],
+        [
+          1587733200,
+          42
+        ],
+        [
+          1587736800,
+          32
+        ],
+        [
+          1587740400,
+          14
+        ],
+        [
+          1587744000,
+          2
+        ],
+        [
+          1587747600,
+          16
+        ],
+        [
+          1587751200,
+          16
+        ],
+        [
+          1587754800,
+          3
+        ],
+        [
+          1587758400,
+          22
+        ],
+        [
+          1587762000,
+          0
+        ],
+        [
+          1587765600,
+          0
+        ],
+        [
+          1587769200,
+          0
+        ],
+        [
+          1587772800,
+          170
+        ],
+        [
+          1587776400,
+          97
+        ],
+        [
+          1587780000,
+          100
+        ],
+        [
+          1587783600,
+          41
+        ],
+        [
+          1587787200,
+          0
+        ],
+        [
+          1587790800,
+          2
+        ],
+        [
+          1587794400,
+          0
+        ],
+        [
+          1587798000,
+          0
+        ],
+        [
+          1587801600,
+          0
+        ]
+      ]
+    },
+    "culprit": "org.geoserver.geofence.services.RuleReaderServiceImpl in getAccessInfo",
+    "title": "No access for filter RuleFilter[user:\"anonymous\"+ role:ANY inst:name+:default-gs ip:\"213.166.193....",
+    "id": "1625416332",
+    "assignedTo": null,
+    "logger": "org.geoserver.geofence.services.RuleReaderServiceImpl",
+    "type": "default",
+    "annotations": [],
+    "metadata": {
+      "title": "No access for filter RuleFilter[user:\"anonymous\"+ role:ANY inst:name+:default-gs ip:\"213.166.193...."
+    },
+    "status": "unresolved",
+    "subscriptionDetails": null,
+    "isPublic": false,
+    "hasSeen": false,
+    "shortId": "GEORCHESTRA-10",
+    "shareId": null,
+    "firstSeen": "2020-04-22T12:54:11Z",
+    "count": "2063",
+    "permalink": "https://sentry.io/organizations/camptocamp/issues/1625416332/",
+    "level": "warning",
+    "isSubscribed": false,
+    "isBookmarked": false,
+    "project": {
+      "platform": "java",
+      "slug": "georchestra",
+      "id": "5193327",
+      "name": "georchestra"
+    },
+    "statusDetails": {}
+  }
+]
