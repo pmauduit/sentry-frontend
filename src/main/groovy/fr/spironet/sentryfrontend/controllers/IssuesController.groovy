@@ -19,10 +19,17 @@ class SentryController {
   @Value('#{environment.SENTRY_TOKEN}')
   private final def SENTRY_TOKEN
 
+  @Value('#{environment.CUSTOMER}')
+  private final def CUSTOMER
+
+  @Value('#{environment.WEBAPP}')
+  private final def WEBAPP
+
+
   private def api_url = "https://sentry.io/api/0"
 
-  private String getIssues(String org, String project, String customer) {
-    def actualUrlStr = "${api_url}/projects/${org}/${project}/issues/?query=project:${customer}* webapp:geoserver* is:unresolved"
+  private String getIssues(String org, String project, String customer, String webapp) {
+    def actualUrlStr = "${api_url}/projects/${org}/${project}/issues/?query=project:${customer}* webapp:${webapp}* is:unresolved"
 
     def hc = new OkHttpClient()
     def request = new Request.Builder()
@@ -39,7 +46,7 @@ class SentryController {
 
   @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
   def defaultController() {
-    def issues = this.getIssues("camptocamp", "georchestra", "geo2france")
+    def issues = this.getIssues("camptocamp", "georchestra", CUSTOMER, WEBAPP)
     def ret = new JsonSlurper().parseText(issues)
 
     return new ResponseEntity<Object>(ret, HttpStatus.OK)
