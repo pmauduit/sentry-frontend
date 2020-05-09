@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 
+
 //import Data from './sampleData';
+
+import {
+  Link
+} from "react-router-dom";
 
 class IssuesComponent extends Component {
   constructor(props) {
@@ -13,6 +18,7 @@ class IssuesComponent extends Component {
   }
 
   componentDidMount() {
+    // prod
     fetch("../issues")
       .then(res => res.json())
       .then(
@@ -25,10 +31,12 @@ class IssuesComponent extends Component {
         (error) => {
           this.setState({
             isLoaded: true,
-            error
+            error: error
           });
         }
       )
+    // dev
+    //this.setState({ isLoaded: true, issues: Data });
   }
 
   render() {
@@ -56,7 +64,7 @@ class IssuesComponent extends Component {
                   return (
                     <tr className="text-left">
                       <th scope="row">{index}</th>
-                      <td><pre>{issue.shortId}</pre></td>
+                      <td><pre><Link to={ `/issue/${issue.id}` }>{issue.shortId}</Link></pre></td>
                       <td><pre>{issue.title}</pre></td>
                       <td>{issue.count}</td>
                     </tr>

@@ -1,0 +1,568 @@
+{
+  "seenBy": [
+    {
+      "username": "pierre.mauduit@camptocamp.com",
+      "lastLogin": "2020-04-16T15:45:20.636447Z",
+      "isSuperuser": false,
+      "emails": [
+        {
+          "is_verified": true,
+          "id": "697555",
+          "email": "pierre.mauduit@camptocamp.com"
+        }
+      ],
+      "isManaged": false,
+      "experiments": {},
+      "lastActive": "2020-05-08T17:27:17.194971Z",
+      "isStaff": false,
+      "identities": [],
+      "id": "640322",
+      "isActive": true,
+      "has2fa": false,
+      "name": "Pierre Mauduit",
+      "avatarUrl": "https://secure.gravatar.com/avatar/bc9df4da00c611d642429cf035354fe2?s=32&d=mm",
+      "dateJoined": "2020-04-01T12:50:07.554160Z",
+      "options": {
+        "timezone": "UTC",
+        "stacktraceOrder": -1,
+        "language": "en",
+        "clock24Hours": false
+      },
+      "flags": {
+        "newsletter_consent_prompt": false
+      },
+      "avatar": {
+        "avatarUuid": null,
+        "avatarType": "letter_avatar"
+      },
+      "hasPasswordAuth": true,
+      "email": "pierre.mauduit@camptocamp.com",
+      "lastSeen": "2020-05-08T16:16:23.787774Z"
+    },
+    {
+      "username": "jean.pommier@camptocamp.com",
+      "lastLogin": "2020-05-07T10:16:57.297586Z",
+      "isSuperuser": false,
+      "isManaged": false,
+      "experiments": {},
+      "lastActive": "2020-05-07T13:56:04.148188Z",
+      "isStaff": false,
+      "id": "670385",
+      "isActive": true,
+      "has2fa": false,
+      "name": "Jean Pommier",
+      "avatarUrl": "https://secure.gravatar.com/avatar/6236df1d50572a34266303f5542c6335?s=32&d=mm",
+      "dateJoined": "2020-05-07T10:16:56.190958Z",
+      "emails": [
+        {
+          "is_verified": false,
+          "id": "765126",
+          "email": "jean.pommier@camptocamp.com"
+        }
+      ],
+      "avatar": {
+        "avatarUuid": null,
+        "avatarType": "letter_avatar"
+      },
+      "hasPasswordAuth": true,
+      "email": "jean.pommier@camptocamp.com",
+      "lastSeen": "2020-05-07T11:59:58.739334Z"
+    },
+    {
+      "username": "christophe.mangeat@camptocamp.com",
+      "lastLogin": "2020-04-17T10:06:12.001516Z",
+      "isSuperuser": false,
+      "isManaged": false,
+      "experiments": {},
+      "lastActive": "2020-04-17T13:48:49.546386Z",
+      "isStaff": false,
+      "id": "653629",
+      "isActive": true,
+      "has2fa": false,
+      "name": "Christophe Mangeat",
+      "avatarUrl": "https://secure.gravatar.com/avatar/58508c579a1ecc36f3bebb9d8f7c2469?s=32&d=mm",
+      "dateJoined": "2020-04-17T10:06:11.163706Z",
+      "emails": [
+        {
+          "is_verified": true,
+          "id": "746820",
+          "email": "christophe.mangeat@camptocamp.com"
+        }
+      ],
+      "avatar": {
+        "avatarUuid": null,
+        "avatarType": "letter_avatar"
+      },
+      "hasPasswordAuth": true,
+      "email": "christophe.mangeat@camptocamp.com",
+      "lastSeen": "2020-04-17T10:10:20.433352Z"
+    },
+    {
+      "username": "francois.vanderbiest@camptocamp.com",
+      "lastLogin": "2020-04-17T09:01:19.001189Z",
+      "isSuperuser": false,
+      "isManaged": false,
+      "experiments": {},
+      "lastActive": "2020-05-01T07:47:20.912647Z",
+      "isStaff": false,
+      "id": "653564",
+      "isActive": true,
+      "has2fa": false,
+      "name": "François Van Der Biest",
+      "avatarUrl": "https://secure.gravatar.com/avatar/4e6b69444cac2375b86d300407f55cca?s=32&d=mm",
+      "dateJoined": "2020-04-17T09:01:17.857466Z",
+      "emails": [
+        {
+          "is_verified": true,
+          "id": "746746",
+          "email": "francois.vanderbiest@camptocamp.com"
+        }
+      ],
+      "avatar": {
+        "avatarUuid": null,
+        "avatarType": "letter_avatar"
+      },
+      "hasPasswordAuth": false,
+      "email": "francois.vanderbiest@camptocamp.com",
+      "lastSeen": "2020-04-17T09:56:32.010875Z"
+    }
+  ],
+  "platform": "java",
+  "pluginIssues": [],
+  "lastSeen": "2020-05-08T17:09:51Z",
+  "userReportCount": 0,
+  "numComments": 0,
+  "userCount": 1351,
+  "stats": {
+    "30d": [
+      [
+        1586304000,
+        0
+      ],
+      [
+        1586390400,
+        0
+      ],
+      [
+        1586476800,
+        0
+      ],
+      [
+        1586563200,
+        0
+      ],
+      [
+        1586649600,
+        0
+      ],
+      [
+        1586736000,
+        0
+      ],
+      [
+        1586822400,
+        0
+      ],
+      [
+        1586908800,
+        0
+      ],
+      [
+        1586995200,
+        290
+      ],
+      [
+        1587081600,
+        544
+      ],
+      [
+        1587168000,
+        163
+      ],
+      [
+        1587254400,
+        188
+      ],
+      [
+        1587340800,
+        502
+      ],
+      [
+        1587427200,
+        509
+      ],
+      [
+        1587513600,
+        904
+      ],
+      [
+        1587600000,
+        2175
+      ],
+      [
+        1587686400,
+        2724
+      ],
+      [
+        1587772800,
+        518
+      ],
+      [
+        1587859200,
+        555
+      ],
+      [
+        1587945600,
+        1583
+      ],
+      [
+        1588032000,
+        1549
+      ],
+      [
+        1588118400,
+        1926
+      ],
+      [
+        1588204800,
+        1708
+      ],
+      [
+        1588291200,
+        831
+      ],
+      [
+        1588377600,
+        732
+      ],
+      [
+        1588464000,
+        817
+      ],
+      [
+        1588550400,
+        1199
+      ],
+      [
+        1588636800,
+        2742
+      ],
+      [
+        1588723200,
+        1387
+      ],
+      [
+        1588809600,
+        1706
+      ],
+      [
+        1588896000,
+        770
+      ]
+    ],
+    "24h": [
+      [
+        1588870800,
+        30
+      ],
+      [
+        1588874400,
+        4
+      ],
+      [
+        1588878000,
+        29
+      ],
+      [
+        1588881600,
+        10
+      ],
+      [
+        1588885200,
+        26
+      ],
+      [
+        1588888800,
+        3
+      ],
+      [
+        1588892400,
+        38
+      ],
+      [
+        1588896000,
+        94
+      ],
+      [
+        1588899600,
+        89
+      ],
+      [
+        1588903200,
+        105
+      ],
+      [
+        1588906800,
+        8
+      ],
+      [
+        1588910400,
+        26
+      ],
+      [
+        1588914000,
+        0
+      ],
+      [
+        1588917600,
+        45
+      ],
+      [
+        1588921200,
+        88
+      ],
+      [
+        1588924800,
+        14
+      ],
+      [
+        1588928400,
+        15
+      ],
+      [
+        1588932000,
+        16
+      ],
+      [
+        1588935600,
+        15
+      ],
+      [
+        1588939200,
+        22
+      ],
+      [
+        1588942800,
+        23
+      ],
+      [
+        1588946400,
+        33
+      ],
+      [
+        1588950000,
+        81
+      ],
+      [
+        1588953600,
+        19
+      ],
+      [
+        1588957200,
+        77
+      ]
+    ]
+  },
+  "culprit": "org.georchestra.security.Proxy in handleRequest",
+  "title": "Downstream server returned a status code which could be an error. Statuscode: 404, reason: Not Found",
+  "id": "1615193469",
+  "assignedTo": null,
+  "participants": [],
+  "logger": "org.georchestra.security",
+  "type": "default",
+  "annotations": [],
+  "metadata": {
+    "title": "Downstream server returned a status code which could be an error. Statuscode: 404, reason: Not Found"
+  },
+  "status": "unresolved",
+  "pluginActions": [],
+  "tags": [
+    {
+      "totalValues": 21860,
+      "name": "Browser",
+      "key": "browser"
+    },
+    {
+      "totalValues": 16678,
+      "name": "Browser.Name",
+      "key": "browser.name"
+    },
+    {
+      "totalValues": 12885,
+      "name": "Client Os",
+      "key": "client_os"
+    },
+    {
+      "totalValues": 14396,
+      "name": "Client Os.Name",
+      "key": "client_os.name"
+    },
+    {
+      "totalValues": 12237,
+      "name": "Customer",
+      "key": "customer"
+    },
+    {
+      "totalValues": 7213,
+      "name": "Device",
+      "key": "device"
+    },
+    {
+      "totalValues": 2017,
+      "name": "Device.Family",
+      "key": "device.family"
+    },
+    {
+      "totalValues": 12237,
+      "name": "Environment",
+      "key": "environment"
+    },
+    {
+      "totalValues": 26022,
+      "name": "Level",
+      "key": "level"
+    },
+    {
+      "totalValues": 26022,
+      "name": "Logger",
+      "key": "logger"
+    },
+    {
+      "totalValues": 5196,
+      "name": "OS",
+      "key": "os"
+    },
+    {
+      "totalValues": 13785,
+      "name": "Project",
+      "key": "project"
+    },
+    {
+      "totalValues": 12237,
+      "name": "Release",
+      "key": "release"
+    },
+    {
+      "totalValues": 26022,
+      "name": "Server",
+      "key": "server_name"
+    },
+    {
+      "totalValues": 25973,
+      "name": "URL",
+      "key": "url"
+    },
+    {
+      "totalValues": 26021,
+      "name": "User",
+      "key": "user"
+    },
+    {
+      "totalValues": 26022,
+      "name": "Webapp",
+      "key": "webapp"
+    }
+  ],
+  "subscriptionDetails": null,
+  "isPublic": false,
+  "hasSeen": true,
+  "firstRelease": {
+    "dateReleased": null,
+    "newGroups": 87,
+    "commitCount": 0,
+    "url": null,
+    "data": {},
+    "lastDeploy": null,
+    "deployCount": 0,
+    "dateCreated": "2020-04-29T16:23:11Z",
+    "lastEvent": "2020-05-08T17:26:18Z",
+    "version": "20.0.2",
+    "firstEvent": "2020-04-29T16:23:11Z",
+    "lastCommit": null,
+    "shortVersion": "20.0.2",
+    "authors": [],
+    "owner": null,
+    "versionInfo": {
+      "buildHash": null,
+      "version": {
+        "raw": "20.0.2"
+      },
+      "description": "20.0.2",
+      "package": null
+    },
+    "ref": null,
+    "projects": [
+      {
+        "platforms": [
+          "java"
+        ],
+        "platform": "java",
+        "id": 5193327,
+        "name": "georchestra",
+        "slug": "georchestra"
+      }
+    ]
+  },
+  "shortId": "GEORCHESTRA-2",
+  "shareId": null,
+  "firstSeen": "2020-04-16T15:46:25Z",
+  "count": "26020",
+  "permalink": "https://sentry.io/organizations/camptocamp/issues/1615193469/",
+  "level": "warning",
+  "isSubscribed": false,
+  "pluginContexts": [],
+  "isBookmarked": false,
+  "project": {
+    "platform": "java",
+    "slug": "georchestra",
+    "id": "5193327",
+    "name": "georchestra"
+  },
+  "lastRelease": {
+    "dateReleased": null,
+    "newGroups": 87,
+    "commitCount": 0,
+    "url": null,
+    "data": {},
+    "lastDeploy": null,
+    "deployCount": 0,
+    "dateCreated": "2020-04-29T16:23:11Z",
+    "lastEvent": "2020-05-08T17:26:18Z",
+    "version": "20.0.2",
+    "firstEvent": "2020-04-29T16:23:11Z",
+    "lastCommit": null,
+    "shortVersion": "20.0.2",
+    "authors": [],
+    "owner": null,
+    "versionInfo": {
+      "buildHash": null,
+      "version": {
+        "raw": "20.0.2"
+      },
+      "description": "20.0.2",
+      "package": null
+    },
+    "ref": null,
+    "projects": [
+      {
+        "platforms": [
+          "java"
+        ],
+        "platform": "java",
+        "id": 5193327,
+        "name": "georchestra",
+        "slug": "georchestra"
+      }
+    ]
+  },
+  "activity": [
+    {
+      "data": {},
+      "dateCreated": "2020-04-16T15:46:25Z",
+      "type": "first_seen",
+      "id": "0",
+      "user": null
+    }
+  ],
+  "statusDetails": {}
+}
