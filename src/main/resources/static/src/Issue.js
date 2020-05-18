@@ -5,11 +5,10 @@
 import React, { Component } from 'react';
 
 import {
-  useParams
+  useParams, Link
 } from "react-router-dom";
 
-
-// import Data from './sampleDataSingleIssue';
+//import Data from './sampleDataSingleIssue';
 
 class IssueComponent extends Component {
   
@@ -44,7 +43,7 @@ class IssueComponent extends Component {
         }
       )
     //dev
-    //    this.setState({ isLoaded: true, issue: Data });
+    //this.setState({ isLoaded: true, issue: Data });
   }
 
   render() {
@@ -56,17 +55,32 @@ class IssueComponent extends Component {
     } else {
         return (
           <div className="container-fluid">
-          <div className="row">
-            <div className="col-12">
-              <div className="App">
-                <div className="issue">
-                  <h1>{ issue.title }</h1>
-                  <p>Title: { issue.title }</p>
-                  <p>Issue short Id: <a href={issue.permalink} target="_blank">{ issue.shortId }</a></p>
-                </div>
+              <div className="row">
+                    <div className="col-12 text-left">
+                          <h3><a href={issue.permalink} target="_blank">{ issue.title }</a></h3>
+                          <hr class="my-4" />
+                          <h3>Versions</h3>
+                          <ul>
+                              <li>first seen on <pre>v{ issue.firstRelease.version }</pre></li>
+                              <li>last seen on <pre>v{ issue.lastRelease.version }</pre></li>
+                          </ul>
+                           <hr class="my-4" />
+                          <h3>Logger</h3>
+                          <p>{issue.logger}</p>
+                          <hr class="my-4" />
+                          <h3>Tags:</h3>
+                          <ul>
+                              {
+                               issue.tags.map((tag, index) => {
+                                  return (
+                                      <li><Link to={ `/issue/${issue.id}/tag/${tag.key}` }>{tag.key} ({tag.totalValues})</Link></li>
+                                  );
+                                })
+                              }
+                          </ul>
+                          <hr class="my-4" />
+                    </div>
               </div>
-            </div>
-          </div>
         </div>
         );
     }

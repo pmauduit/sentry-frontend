@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 
 import Issues from './Issues';
-import SingleIssue from './Issue';
+import Issue from './Issue';
 
 import 'bootstrap/dist/js/bootstrap.js';
 
@@ -33,26 +33,22 @@ class App extends Component {
           </div>
         </nav>
         <Switch>
-          <Route path="/issue/:id" component={SingleIssue} />
+          <Route path="/issue/:id" component={Issue} />
           <Route path="/about">
-          <div className="container-fluid">
-              <div className="row">
-                <div className="col-12">
-                  <div className="App">
-                    <h1>About</h1>
-                    <p><i>Just a frontend to sentry.IO</i></p>
+              <div className="container-fluid">
+                  <div className="row">
+                    <div className="col-12 text-left">
+                        <h1>About</h1>
+                        <p><i>Just a frontend to sentry.IO</i></p>
+                    </div>
                   </div>
-                </div>
               </div>
-            </div>          
           </Route>
           <Route path="/">
             <div className="container-fluid">
               <div className="row">
-                <div className="col-12">
-                  <div className="App">
+                <div className="col-12 text-left">
                     <Issues />
-                  </div>
                 </div>
               </div>
             </div>

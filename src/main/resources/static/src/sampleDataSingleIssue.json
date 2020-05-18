@@ -2,7 +2,7 @@
   "seenBy": [
     {
       "username": "pierre.mauduit@camptocamp.com",
-      "lastLogin": "2020-04-16T15:45:20.636447Z",
+      "lastLogin": "2020-05-18T08:44:37.528743Z",
       "isSuperuser": false,
       "emails": [
         {
@@ -13,7 +13,7 @@
       ],
       "isManaged": false,
       "experiments": {},
-      "lastActive": "2020-05-08T17:27:17.194971Z",
+      "lastActive": "2020-05-18T19:03:21.718015Z",
       "isStaff": false,
       "identities": [],
       "id": "640322",
@@ -37,428 +37,331 @@
       },
       "hasPasswordAuth": true,
       "email": "pierre.mauduit@camptocamp.com",
-      "lastSeen": "2020-05-08T16:16:23.787774Z"
-    },
-    {
-      "username": "jean.pommier@camptocamp.com",
-      "lastLogin": "2020-05-07T10:16:57.297586Z",
-      "isSuperuser": false,
-      "isManaged": false,
-      "experiments": {},
-      "lastActive": "2020-05-07T13:56:04.148188Z",
-      "isStaff": false,
-      "id": "670385",
-      "isActive": true,
-      "has2fa": false,
-      "name": "Jean Pommier",
-      "avatarUrl": "https://secure.gravatar.com/avatar/6236df1d50572a34266303f5542c6335?s=32&d=mm",
-      "dateJoined": "2020-05-07T10:16:56.190958Z",
-      "emails": [
-        {
-          "is_verified": false,
-          "id": "765126",
-          "email": "jean.pommier@camptocamp.com"
-        }
-      ],
-      "avatar": {
-        "avatarUuid": null,
-        "avatarType": "letter_avatar"
-      },
-      "hasPasswordAuth": true,
-      "email": "jean.pommier@camptocamp.com",
-      "lastSeen": "2020-05-07T11:59:58.739334Z"
-    },
-    {
-      "username": "christophe.mangeat@camptocamp.com",
-      "lastLogin": "2020-04-17T10:06:12.001516Z",
-      "isSuperuser": false,
-      "isManaged": false,
-      "experiments": {},
-      "lastActive": "2020-04-17T13:48:49.546386Z",
-      "isStaff": false,
-      "id": "653629",
-      "isActive": true,
-      "has2fa": false,
-      "name": "Christophe Mangeat",
-      "avatarUrl": "https://secure.gravatar.com/avatar/58508c579a1ecc36f3bebb9d8f7c2469?s=32&d=mm",
-      "dateJoined": "2020-04-17T10:06:11.163706Z",
-      "emails": [
-        {
-          "is_verified": true,
-          "id": "746820",
-          "email": "christophe.mangeat@camptocamp.com"
-        }
-      ],
-      "avatar": {
-        "avatarUuid": null,
-        "avatarType": "letter_avatar"
-      },
-      "hasPasswordAuth": true,
-      "email": "christophe.mangeat@camptocamp.com",
-      "lastSeen": "2020-04-17T10:10:20.433352Z"
-    },
-    {
-      "username": "francois.vanderbiest@camptocamp.com",
-      "lastLogin": "2020-04-17T09:01:19.001189Z",
-      "isSuperuser": false,
-      "isManaged": false,
-      "experiments": {},
-      "lastActive": "2020-05-01T07:47:20.912647Z",
-      "isStaff": false,
-      "id": "653564",
-      "isActive": true,
-      "has2fa": false,
-      "name": "François Van Der Biest",
-      "avatarUrl": "https://secure.gravatar.com/avatar/4e6b69444cac2375b86d300407f55cca?s=32&d=mm",
-      "dateJoined": "2020-04-17T09:01:17.857466Z",
-      "emails": [
-        {
-          "is_verified": true,
-          "id": "746746",
-          "email": "francois.vanderbiest@camptocamp.com"
-        }
-      ],
-      "avatar": {
-        "avatarUuid": null,
-        "avatarType": "letter_avatar"
-      },
-      "hasPasswordAuth": false,
-      "email": "francois.vanderbiest@camptocamp.com",
-      "lastSeen": "2020-04-17T09:56:32.010875Z"
+      "lastSeen": "2020-05-18T19:06:34.356249Z"
     }
   ],
   "platform": "java",
   "pluginIssues": [],
-  "lastSeen": "2020-05-08T17:09:51Z",
+  "lastSeen": "2020-05-18T16:29:50Z",
   "userReportCount": 0,
   "numComments": 0,
-  "userCount": 1351,
+  "userCount": 16,
   "stats": {
     "30d": [
       [
-        1586304000,
-        0
-      ],
-      [
-        1586390400,
-        0
-      ],
-      [
-        1586476800,
-        0
-      ],
-      [
-        1586563200,
-        0
-      ],
-      [
-        1586649600,
-        0
-      ],
-      [
-        1586736000,
-        0
-      ],
-      [
-        1586822400,
-        0
-      ],
-      [
-        1586908800,
-        0
-      ],
-      [
-        1586995200,
-        290
-      ],
-      [
-        1587081600,
-        544
-      ],
-      [
         1587168000,
-        163
+        0
       ],
       [
         1587254400,
-        188
+        0
       ],
       [
         1587340800,
-        502
+        0
       ],
       [
         1587427200,
-        509
+        0
       ],
       [
         1587513600,
-        904
+        0
       ],
       [
         1587600000,
-        2175
+        0
       ],
       [
         1587686400,
-        2724
+        0
       ],
       [
         1587772800,
-        518
+        0
       ],
       [
         1587859200,
-        555
+        0
       ],
       [
         1587945600,
-        1583
+        0
       ],
       [
         1588032000,
-        1549
+        0
       ],
       [
         1588118400,
-        1926
+        0
       ],
       [
         1588204800,
-        1708
+        0
       ],
       [
         1588291200,
-        831
+        0
       ],
       [
         1588377600,
-        732
+        0
       ],
       [
         1588464000,
-        817
+        0
       ],
       [
         1588550400,
-        1199
+        0
       ],
       [
         1588636800,
-        2742
+        0
       ],
       [
         1588723200,
-        1387
+        0
       ],
       [
         1588809600,
-        1706
+        0
       ],
       [
         1588896000,
-        770
+        0
+      ],
+      [
+        1588982400,
+        0
+      ],
+      [
+        1589068800,
+        0
+      ],
+      [
+        1589155200,
+        0
+      ],
+      [
+        1589241600,
+        0
+      ],
+      [
+        1589328000,
+        0
+      ],
+      [
+        1589414400,
+        0
+      ],
+      [
+        1589500800,
+        2503
+      ],
+      [
+        1589587200,
+        1497
+      ],
+      [
+        1589673600,
+        225
+      ],
+      [
+        1589760000,
+        2036
       ]
     ],
     "24h": [
       [
-        1588870800,
-        30
-      ],
-      [
-        1588874400,
-        4
-      ],
-      [
-        1588878000,
-        29
-      ],
-      [
-        1588881600,
-        10
-      ],
-      [
-        1588885200,
-        26
-      ],
-      [
-        1588888800,
-        3
-      ],
-      [
-        1588892400,
-        38
-      ],
-      [
-        1588896000,
-        94
-      ],
-      [
-        1588899600,
-        89
-      ],
-      [
-        1588903200,
-        105
-      ],
-      [
-        1588906800,
-        8
-      ],
-      [
-        1588910400,
-        26
-      ],
-      [
-        1588914000,
+        1589742000,
         0
       ],
       [
-        1588917600,
-        45
+        1589745600,
+        0
       ],
       [
-        1588921200,
-        88
+        1589749200,
+        225
       ],
       [
-        1588924800,
-        14
+        1589752800,
+        0
       ],
       [
-        1588928400,
-        15
+        1589756400,
+        0
       ],
       [
-        1588932000,
-        16
+        1589760000,
+        0
       ],
       [
-        1588935600,
-        15
+        1589763600,
+        0
       ],
       [
-        1588939200,
-        22
+        1589767200,
+        0
       ],
       [
-        1588942800,
-        23
+        1589770800,
+        0
       ],
       [
-        1588946400,
-        33
+        1589774400,
+        0
       ],
       [
-        1588950000,
-        81
+        1589778000,
+        0
       ],
       [
-        1588953600,
-        19
+        1589781600,
+        90
       ],
       [
-        1588957200,
-        77
+        1589785200,
+        444
+      ],
+      [
+        1589788800,
+        128
+      ],
+      [
+        1589792400,
+        247
+      ],
+      [
+        1589796000,
+        0
+      ],
+      [
+        1589799600,
+        0
+      ],
+      [
+        1589803200,
+        6
+      ],
+      [
+        1589806800,
+        0
+      ],
+      [
+        1589810400,
+        1034
+      ],
+      [
+        1589814000,
+        11
+      ],
+      [
+        1589817600,
+        76
+      ],
+      [
+        1589821200,
+        0
+      ],
+      [
+        1589824800,
+        0
+      ],
+      [
+        1589828400,
+        0
       ]
     ]
   },
-  "culprit": "org.georchestra.security.Proxy in handleRequest",
-  "title": "Downstream server returned a status code which could be an error. Statuscode: 404, reason: Not Found",
-  "id": "1615193469",
+  "culprit": "org.geotools.util.logging.Log4JLogger in log",
+  "title": "No source IP address found",
+  "id": "1667751687",
   "assignedTo": null,
   "participants": [],
-  "logger": "org.georchestra.security",
+  "logger": "org.geotools.referencing.operation.projection",
   "type": "default",
   "annotations": [],
   "metadata": {
-    "title": "Downstream server returned a status code which could be an error. Statuscode: 404, reason: Not Found"
+    "title": "No source IP address found"
   },
   "status": "unresolved",
   "pluginActions": [],
   "tags": [
     {
-      "totalValues": 21860,
+      "totalValues": 68,
       "name": "Browser",
       "key": "browser"
     },
     {
-      "totalValues": 16678,
+      "totalValues": 50,
       "name": "Browser.Name",
       "key": "browser.name"
     },
     {
-      "totalValues": 12885,
+      "totalValues": 19,
       "name": "Client Os",
       "key": "client_os"
     },
     {
-      "totalValues": 14396,
+      "totalValues": 27,
       "name": "Client Os.Name",
       "key": "client_os.name"
     },
     {
-      "totalValues": 12237,
-      "name": "Customer",
-      "key": "customer"
-    },
-    {
-      "totalValues": 7213,
+      "totalValues": 20,
       "name": "Device",
       "key": "device"
     },
     {
-      "totalValues": 2017,
+      "totalValues": 2,
       "name": "Device.Family",
       "key": "device.family"
     },
     {
-      "totalValues": 12237,
+      "totalValues": 6261,
       "name": "Environment",
       "key": "environment"
     },
     {
-      "totalValues": 26022,
+      "totalValues": 6261,
       "name": "Level",
       "key": "level"
     },
     {
-      "totalValues": 26022,
+      "totalValues": 6261,
       "name": "Logger",
       "key": "logger"
     },
     {
-      "totalValues": 5196,
+      "totalValues": 18,
       "name": "OS",
       "key": "os"
     },
     {
-      "totalValues": 13785,
-      "name": "Project",
-      "key": "project"
-    },
-    {
-      "totalValues": 12237,
+      "totalValues": 6261,
       "name": "Release",
       "key": "release"
     },
     {
-      "totalValues": 26022,
+      "totalValues": 6261,
       "name": "Server",
       "key": "server_name"
     },
     {
-      "totalValues": 25973,
+      "totalValues": 97,
       "name": "URL",
       "key": "url"
     },
     {
-      "totalValues": 26021,
+      "totalValues": 97,
       "name": "User",
       "key": "user"
     },
     {
-      "totalValues": 26022,
+      "totalValues": 6261,
       "name": "Webapp",
       "key": "webapp"
     }
@@ -468,68 +371,79 @@
   "hasSeen": true,
   "firstRelease": {
     "dateReleased": null,
-    "newGroups": 87,
+    "newGroups": 20,
     "commitCount": 0,
     "url": null,
     "data": {},
     "lastDeploy": null,
     "deployCount": 0,
-    "dateCreated": "2020-04-29T16:23:11Z",
-    "lastEvent": "2020-05-08T17:26:18Z",
-    "version": "20.0.2",
-    "firstEvent": "2020-04-29T16:23:11Z",
+    "dateCreated": "2020-05-15T09:40:11Z",
+    "lastEvent": "2020-05-18T18:47:02Z",
+    "version": "20.0.3",
+    "firstEvent": "2020-05-15T11:13:35Z",
     "lastCommit": null,
-    "shortVersion": "20.0.2",
+    "shortVersion": "20.0.3",
     "authors": [],
     "owner": null,
     "versionInfo": {
       "buildHash": null,
       "version": {
-        "raw": "20.0.2"
+        "raw": "20.0.3"
       },
-      "description": "20.0.2",
+      "description": "20.0.3",
       "package": null
     },
     "ref": null,
     "projects": [
       {
+        "name": "Java",
+        "platform": "java",
+        "slug": "geograndest",
         "platforms": [
           "java"
         ],
+        "newGroups": 10,
+        "id": 5241953
+      },
+      {
+        "name": "geo2france",
         "platform": "java",
-        "id": 5193327,
-        "name": "georchestra",
-        "slug": "georchestra"
+        "slug": "geo2france",
+        "platforms": [
+          "java"
+        ],
+        "newGroups": 10,
+        "id": 5241954
       }
     ]
   },
-  "shortId": "GEORCHESTRA-2",
+  "shortId": "GEO2FRANCE-9",
   "shareId": null,
-  "firstSeen": "2020-04-16T15:46:25Z",
-  "count": "26020",
-  "permalink": "https://sentry.io/organizations/camptocamp/issues/1615193469/",
+  "firstSeen": "2020-05-15T11:22:09Z",
+  "count": "6261",
+  "permalink": "https://sentry.io/organizations/camptocamp/issues/1667751687/",
   "level": "warning",
   "isSubscribed": false,
   "pluginContexts": [],
   "isBookmarked": false,
   "project": {
     "platform": "java",
-    "slug": "georchestra",
-    "id": "5193327",
-    "name": "georchestra"
+    "slug": "geo2france",
+    "id": "5241954",
+    "name": "geo2france"
   },
   "lastRelease": {
     "dateReleased": null,
-    "newGroups": 87,
+    "newGroups": 151,
     "commitCount": 0,
     "url": null,
     "data": {},
     "lastDeploy": null,
     "deployCount": 0,
     "dateCreated": "2020-04-29T16:23:11Z",
-    "lastEvent": "2020-05-08T17:26:18Z",
+    "lastEvent": "2020-05-18T19:08:16Z",
     "version": "20.0.2",
-    "firstEvent": "2020-04-29T16:23:11Z",
+    "firstEvent": "2020-05-15T10:52:44Z",
     "lastCommit": null,
     "shortVersion": "20.0.2",
     "authors": [],
@@ -545,20 +459,41 @@
     "ref": null,
     "projects": [
       {
+        "name": "geo2france",
+        "platform": "java",
+        "slug": "geo2france",
         "platforms": [
           "java"
         ],
+        "newGroups": 45,
+        "id": 5241954
+      },
+      {
+        "name": "Java",
         "platform": "java",
-        "id": 5193327,
-        "name": "georchestra",
-        "slug": "georchestra"
+        "slug": "geograndest",
+        "platforms": [
+          "java"
+        ],
+        "newGroups": 94,
+        "id": 5241953
+      },
+      {
+        "name": "pigma",
+        "platform": "java",
+        "slug": "pigma",
+        "platforms": [
+          "java"
+        ],
+        "newGroups": 12,
+        "id": 5241959
       }
     ]
   },
   "activity": [
     {
       "data": {},
-      "dateCreated": "2020-04-16T15:46:25Z",
+      "dateCreated": "2020-05-15T11:22:09Z",
       "type": "first_seen",
       "id": "0",
       "user": null
