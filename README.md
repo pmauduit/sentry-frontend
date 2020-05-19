@@ -1,8 +1,8 @@
 # Sentry-frontend
 
-## Launch locally
+## Launch locally
 
-1. define the env variables needed (see below)
+1. define the env variables needed (see below, as well as the `env.dist` file)
 2. `./gradlew bootRun`
 
 ## Build
