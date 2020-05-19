@@ -47,32 +47,41 @@ class IssuesComponent extends Component {
     } else {
         issues.sort((a, b) => (parseInt(a.count, 10) < parseInt(b.count, 10)) ? 1 : -1);
         return (
-            <div className="issues">
-              <table className="table">
-                <thead>
-                    <tr className="text-left">
-                      <th scope="col">#</th>
-                      <th scope="col">code</th>
-                      <th scope="col">message</th>
-                      <th scope="col">count</th>
-                    </tr>
-                 </thead>
-                 <tbody>
-              {
-               issues.map((issue, index) => {
-                  return (
-                    <tr className="text-left">
-                      <th scope="row">{index}</th>
-                      <td><pre><Link to={ `/issue/${issue.id}` }>{issue.shortId}</Link></pre></td>
-                      <td><pre>{issue.title}</pre></td>
-                      <td>{issue.count}</td>
-                    </tr>
-                  );
-                })
-              }
-                </tbody>
-              </table>
-            </div>
+                      <div className="container-fluid">
+                          <div className="row">
+                            <div className="col-8 offset-2 text-left">
+                              <h1>Issue listing</h1>
+                            </div>
+                           </div>
+                          <div className="row">
+                            <div className="col-8 offset-2 text-left">
+                                  <table className="table">
+                                    <thead>
+                                        <tr className="text-left">
+                                          <th scope="col">#</th>
+                                          <th scope="col">code</th>
+                                          <th scope="col">message</th>
+                                          <th scope="col">count</th>
+                                        </tr>
+                                     </thead>
+                                     <tbody>
+                                  {
+                                   issues.map((issue, index) => {
+                                      return (
+                                        <tr className="text-left" key={index}>
+                                          <th scope="row">{index}</th>
+                                          <td><pre><Link to={ `/issue/${issue.id}` }>{issue.shortId}</Link></pre></td>
+                                          <td><pre>{issue.title}</pre></td>
+                                          <td>{issue.count}</td>
+                                        </tr>
+                                      );
+                                    })
+                                  }
+                                    </tbody>
+                                  </table>
+                            </div>
+                           </div>
+                      </div>
         );
     }
   }

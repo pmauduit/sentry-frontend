@@ -4,9 +4,8 @@
 
 import React, { Component } from 'react';
 
-import {
-  Link
-} from "react-router-dom";
+import Tag from './Tag';
+
 
 //import Data from './sampleDataSingleIssue';
 
@@ -18,8 +17,7 @@ class IssueComponent extends Component {
     this.state = {
       error: null,
       isLoaded: false,
-      issue: {},
-      issueId: this.props.match.params.id
+      tagKey: null
     };
   }
 
@@ -46,8 +44,14 @@ class IssueComponent extends Component {
     //this.setState({ isLoaded: true, issue: Data });
   }
 
+    loadTag(tag) {
+      this.setState(state => ({
+        tagKey: tag.key
+      }));
+    }
+
   render() {
-    const { error, isLoaded, issue, _ } = this.state;
+    const { error, isLoaded, issue, tagKey } = this.state;
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (! isLoaded) {
@@ -56,29 +60,42 @@ class IssueComponent extends Component {
         return (
           <div className="container-fluid">
               <div className="row">
-                    <div className="col-12 text-left">
-                          <h3><a href={issue.permalink} target="_blank">{ issue.title }</a></h3>
-                          <hr class="my-4" />
+                    <div className="col-6 offset-2 text-left">
+                        <h3><a href={issue.permalink} target="_blank">{ issue.title }</a></h3>
+                        <hr className="my-4" />
+                        <h3>Occurences</h3>
+                        <ul>
+                            <li>Number of events: <pre>{ issue.count }</pre></li>
+                        </ul>
+                        <hr className="my-4" />
                           <h3>Versions</h3>
                           <ul>
                               <li>first release version: <pre>v{ issue.firstRelease.version }</pre></li>
                               <li>last release version: <pre>v{ issue.lastRelease.version }</pre></li>
                           </ul>
-                           <hr class="my-4" />
+                          <hr className="my-4" />
                           <h3>Logger</h3>
                           <p>{issue.logger}</p>
-                          <hr class="my-4" />
+                          <hr className="my-4" />
+                    </div>
+              </div>
+              <div className="row">
+                    <div className="col-2 offset-2 text-left">
                           <h3>Tags:</h3>
                           <ul>
                               {
                                issue.tags.map((tag, index) => {
                                   return (
-                                      <li><Link to={ `/issue/${issue.id}/tags/${tag.key}` }>{tag.key} ({tag.totalValues})</Link></li>
+                                      <li key={index}>
+                                        <a onClick={() => this.loadTag(tag)} className="stretched-link">{tag.key} ({tag.totalValues})</a>
+                                      </li>
                                   );
                                 })
                               }
                           </ul>
-                          <hr class="my-4" />
+                    </div>
+                    <div className="col-4 text-left">
+                          { tagKey !== null ? <Tag tagKey={tagKey} /> : <div/> }
                     </div>
               </div>
         </div>
