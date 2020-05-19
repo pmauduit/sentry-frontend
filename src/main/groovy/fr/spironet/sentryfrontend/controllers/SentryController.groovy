@@ -46,6 +46,15 @@ class SentryController {
     return new ResponseEntity<Object>(ret, HttpStatus.OK)
   }
 
+  @RequestMapping(path="/{issueId}/tags/{tagKey}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+  def getTagDetails(@PathVariable("issueId") String issueId, @PathVariable("tagKey") String tagKey) {
+    def issueTag = "${api_url}/issues/${issueId}/tags/${tagKey}/".toURL().
+            getText(requestProperties: [Authorization: "Bearer ${SENTRY_TOKEN}"])
+
+    def ret = new JsonSlurper().parseText(issueTag)
+    return new ResponseEntity<Object>(ret, HttpStatus.OK)
+  }
+
   @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
   def defaultController() {
     def issues = this.getIssues(ORGANIZATION, PROJECT, QUERY)

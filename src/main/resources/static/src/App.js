@@ -9,6 +9,7 @@ import {
 
 import Issues from './Issues';
 import Issue from './Issue';
+import Tag from './Tag';
 
 import 'bootstrap/dist/js/bootstrap.js';
 
@@ -33,6 +34,7 @@ class App extends Component {
           </div>
         </nav>
         <Switch>
+          <Route path="/issue/:id/tags/:tagKey" component={Tag} />
           <Route path="/issue/:id" component={Issue} />
           <Route path="/about">
               <div className="container-fluid">

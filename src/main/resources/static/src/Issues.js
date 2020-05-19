@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 //import Data from './sampleData';
 
 import {

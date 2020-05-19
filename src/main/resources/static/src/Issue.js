@@ -61,8 +61,8 @@ class IssueComponent extends Component {
                           <hr class="my-4" />
                           <h3>Versions</h3>
                           <ul>
-                              <li>first seen on <pre>v{ issue.firstRelease.version }</pre></li>
-                              <li>last seen on <pre>v{ issue.lastRelease.version }</pre></li>
+                              <li>first release version: <pre>v{ issue.firstRelease.version }</pre></li>
+                              <li>last release version: <pre>v{ issue.lastRelease.version }</pre></li>
                           </ul>
                            <hr class="my-4" />
                           <h3>Logger</h3>
@@ -73,7 +73,7 @@ class IssueComponent extends Component {
                               {
                                issue.tags.map((tag, index) => {
                                   return (
-                                      <li><Link to={ `/issue/${issue.id}/tag/${tag.key}` }>{tag.key} ({tag.totalValues})</Link></li>
+                                      <li><Link to={ `/issue/${issue.id}/tags/${tag.key}` }>{tag.key} ({tag.totalValues})</Link></li>
                                   );
                                 })
                               }
