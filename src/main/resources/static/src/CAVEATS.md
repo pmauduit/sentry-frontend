@@ -1,4 +1,4 @@
-# What is it about ?
+# What is it about ?
 
 Here are some notes about my issues & concerns when working on a frontend project.
 
