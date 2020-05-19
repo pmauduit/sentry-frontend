@@ -13,5 +13,14 @@ jobs:
 
     - name: build
       run: ./gradlew build
+
+    - name: create docker image
+      run: docker build -t docker.pkg.github.com/pmauduit/sentry-frontend/sentry-frontend:latest .
+
+    - name: login on github packages repository
+      run: echo $DOCKER_PASSWORD | docker login https://docker.pkg.github.com -u pmauduit --password-stdin
       env:
-         CI: false
+        DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+  
+    - name: publish the docker image
+      run: docker push docker.pkg.github.com/pmauduit/sentry-frontend/sentry-frontend:latest
