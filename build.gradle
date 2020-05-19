@@ -39,7 +39,7 @@ bootJar {
 
 /** npm stuff */
 node {
-	version = '14.0.0'
+	version = '12.16.3'
 	npmVersion = '6.14.4'
 	download = true
 	npmWorkDir = file("${project.rootDir}/src/main/resources/static")
@@ -54,7 +54,7 @@ task appNpmInstall(type: NpmTask) {
 task appNpmRunBuild(type: NpmTask) {
 	description = "Compiles my app"
 	workingDir = file("${node.npmWorkDir}")
-	args = ['run', 'build']
+	args = ['run', 'build', '--',  '--trace-warnings']
 }
 
 assemble.dependsOn appNpmInstall, appNpmRunBuild
