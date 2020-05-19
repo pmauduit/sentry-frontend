@@ -5,7 +5,7 @@
 import React, { Component } from 'react';
 
 import {
-  useParams, Link
+  Link
 } from "react-router-dom";
 
 //import Data from './sampleDataSingleIssue';
@@ -47,7 +47,7 @@ class IssueComponent extends Component {
   }
 
   render() {
-    const { error, isLoaded, issue, issueId } = this.state;
+    const { error, isLoaded, issue, _ } = this.state;
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (! isLoaded) {

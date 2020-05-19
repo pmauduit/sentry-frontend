@@ -54,7 +54,7 @@ task appNpmInstall(type: NpmTask) {
 task appNpmRunBuild(type: NpmTask) {
 	description = "Compiles my app"
 	workingDir = file("${node.npmWorkDir}")
-	args = ['run', 'build', '--',  '--trace-warnings']
+	args = ['run', 'build']
 }
 
 assemble.dependsOn appNpmInstall, appNpmRunBuild

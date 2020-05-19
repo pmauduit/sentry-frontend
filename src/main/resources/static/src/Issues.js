@@ -46,7 +46,7 @@ class IssuesComponent extends Component {
     } else if (! isLoaded) {
       return <div>Loading...</div>;
     } else {
-        issues.sort((a, b) => (parseInt(a.count) < parseInt(b.count)) ? 1 : -1);
+        issues.sort((a, b) => (parseInt(a.count, 10) < parseInt(b.count, 10)) ? 1 : -1);
         return (
             <div className="issues">
               <table className="table">
