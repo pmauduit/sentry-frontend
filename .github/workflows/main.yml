@@ -13,3 +13,5 @@ jobs:
 
     - name: build
       run: ./gradlew build
+      env:
+         CI: false
