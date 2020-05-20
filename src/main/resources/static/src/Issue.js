@@ -12,12 +12,12 @@ import Tag from './Tag';
 class IssueComponent extends Component {
   
   constructor(props) {
-
     super(props);
     this.state = {
       error: null,
       isLoaded: false,
-      tagKey: null
+      tagKey: null,
+      issueId: this.props.match.params.id
     };
   }
 
@@ -39,16 +39,15 @@ class IssueComponent extends Component {
             error,
           });
         }
-      )
-    //dev
-    //this.setState({ isLoaded: true, issue: Data });
+      );
   }
 
-    loadTag(tag) {
-      this.setState(state => ({
-        tagKey: tag.key
-      }));
-    }
+  loadTag(link) {
+      console.log(link);
+      //this.setState(state => ({
+      //  tagKey: link.target.dataset.tagkey
+      //}));
+  }
 
   render() {
     const { error, isLoaded, issue, tagKey } = this.state;
@@ -57,48 +56,37 @@ class IssueComponent extends Component {
     } else if (! isLoaded) {
       return <div>Loading...</div>;
     } else {
+        const tagItems = issue.tags.map((tag, index) => {
+             return <li key={index}  onClick={e => this.loadTag(e)} className="stretched-link">{tag.key} ({tag.totalValues})</li>
+        });
         return (
-          <div className="container-fluid">
+            <div className="container-fluid">
               <div className="row">
-                    <div className="col-6 offset-2 text-left">
-                        <h3><a href={issue.permalink} target="_blank">{ issue.title }</a></h3>
-                        <hr className="my-4" />
-                        <h3>Occurences</h3>
-                        <ul>
-                            <li>Number of events: <pre>{ issue.count }</pre></li>
-                        </ul>
-                        <hr className="my-4" />
-                          <h3>Versions</h3>
-                          <ul>
-                              <li>first release version: <pre>v{ issue.firstRelease.version }</pre></li>
-                              <li>last release version: <pre>v{ issue.lastRelease.version }</pre></li>
-                          </ul>
-                          <hr className="my-4" />
-                          <h3>Logger</h3>
-                          <p>{issue.logger}</p>
-                          <hr className="my-4" />
-                    </div>
+                            <div className="col-6 offset-2 text-left">
+                                <h3><a href={issue.permalink} target="_blank">{ issue.title }</a></h3>
+                                <hr className="my-4" />
+                                <h3>Occurences</h3>
+                                <ul>
+                                    <li>Number of events: <pre>{ issue.count }</pre></li>
+                                </ul>
+                                <hr className="my-4" />
+                                <h3>Logger</h3>
+                                <p>{issue.logger}</p>
+                                <hr className="my-4" />
+                            </div>
               </div>
               <div className="row">
                     <div className="col-2 offset-2 text-left">
                           <h3>Tags:</h3>
                           <ul>
-                              {
-                               issue.tags.map((tag, index) => {
-                                  return (
-                                      <li key={index}>
-                                        <a onClick={() => this.loadTag(tag)} className="stretched-link">{tag.key} ({tag.totalValues})</a>
-                                      </li>
-                                  );
-                                })
-                              }
+                          { tagItems }
                           </ul>
                     </div>
                     <div className="col-4 text-left">
-                          { tagKey !== null ? <Tag tagKey={tagKey} /> : <div/> }
+                          { tagKey !== null ? <Tag tagKey={tagKey} issueId={ this.state.issueId } /> : <div/> }
                     </div>
               </div>
-        </div>
+            </div>
         );
     }
   }

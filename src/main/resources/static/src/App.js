@@ -33,14 +33,7 @@ class App extends Component {
           </div>
         </nav>
         <Switch>
-          <Route path="/issue/:id">
-            <div className="container-fluid">
-              <div className="row">
-                <div className="col-12 text-left">
-                    <Issue />
-                </div>
-              </div>
-            </div>
+          <Route path="/issue/:id" component={Issue} >
           </Route>
           <Route path="/about">
               <div className="container-fluid">

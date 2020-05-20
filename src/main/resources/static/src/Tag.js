@@ -13,7 +13,8 @@ class TagComponent extends Component {
       error: null,
       isLoaded: false,
       tagData: {},
-      tagKey: props.tagKey
+      tagKey: props.tagKey,
+      issueId: props.issueId
     };
   }
 
@@ -48,7 +49,7 @@ class TagComponent extends Component {
     } else {
         return (
           <div>
-                <h1>Tag { tagKey }</h1>
+                <h3>top values for { tagKey }</h3>
                 <hr className="my-4" />
                 <table className="table">
                     <thead>
