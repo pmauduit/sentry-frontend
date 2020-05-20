@@ -7,36 +7,56 @@ import React, { Component } from 'react';
 class TagComponent extends Component {
   
   constructor(props) {
-
     super(props);
     this.state = {
       error: null,
       isLoaded: false,
       tagData: {},
-      tagKey: props.tagKey
+      tagKey: props.tagKey,
+      issueId: props.issueId
     };
   }
 
-  componentDidMount() {
-    const issueId = this.state.issueId;
-    const tagKey = this.state.tagKey;
+  loadTagValues() {
+      const issueId = this.props.issueId;
+      const tagKey = this.props.tagKey;
+      fetch(`../issues/${issueId}/tags/${tagKey}`)
+        .then(res => res.json())
+        .then(
+          (result) => {
+            this.setState({
+              isLoaded: true,
+              tagData: result,
+              issueId: issueId,
+              tagKey: tagKey
+            });
+          },
+          (error) => {
+            this.setState({
+              isLoaded: true,
+              error: error,
+              issueId: issueId,
+              tagKey: tagKey
+            });
+          }
+        );
+  }
 
-    fetch(`../issues/${issueId}/tags/${tagKey}`)
-      .then(res => res.json())
-      .then(
-        (result) => {
-          this.setState({
-            isLoaded: true,
-            tagData: result
-          });
-        },
-        (error) => {
-          this.setState({
-            isLoaded: true,
-            error: error,
-          });
-        }
-      )
+  componentDidMount() {
+    this.loadTagValues();
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (this.props.tagKey !== prevProps.tagKey) {
+        this.state = {
+          error: null,
+          isLoaded: false,
+          tagData: {},
+          tagKey: this.props.tagKey,
+          issueId: this.props.issueId
+        };
+     this.loadTagValues();
+     }
   }
 
   render() {
@@ -48,7 +68,7 @@ class TagComponent extends Component {
     } else {
         return (
           <div>
-                <h1>Tag { tagKey }</h1>
+                <h3>top values for { tagKey }</h3>
                 <hr className="my-4" />
                 <table className="table">
                     <thead>
