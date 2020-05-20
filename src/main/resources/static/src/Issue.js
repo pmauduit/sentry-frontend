@@ -6,9 +6,6 @@ import React, { Component } from 'react';
 
 import Tag from './Tag';
 
-
-//import Data from './sampleDataSingleIssue';
-
 class IssueComponent extends Component {
   
   constructor(props) {
@@ -23,7 +20,7 @@ class IssueComponent extends Component {
 
   componentDidMount() {
     const issueId = this.state.issueId;
-    //prod
+
     fetch(`../issues/${issueId}`)
       .then(res => res.json())
       .then(
@@ -42,11 +39,10 @@ class IssueComponent extends Component {
       );
   }
 
-  loadTag(link) {
-      console.log(link);
-      //this.setState(state => ({
-      //  tagKey: link.target.dataset.tagkey
-      //}));
+  loadTag(clickedTag) {
+      this.setState(state => ({
+        tagKey: clickedTag.key
+      }));
   }
 
   render() {
@@ -57,7 +53,12 @@ class IssueComponent extends Component {
       return <div>Loading...</div>;
     } else {
         const tagItems = issue.tags.map((tag, index) => {
-             return <li key={index}  onClick={e => this.loadTag(e)} className="stretched-link">{tag.key} ({tag.totalValues})</li>
+               const t = tag;
+               return <li key={index} className="my-2">
+                    <button className="btn btn-primary btn-block" onClick={() => this.loadTag(t)}>
+                        {t.key} ({t.totalValues})
+                    </button>
+               </li>
         });
         return (
             <div className="container-fluid">
@@ -67,7 +68,7 @@ class IssueComponent extends Component {
                                 <hr className="my-4" />
                                 <h3>Occurences</h3>
                                 <ul>
-                                    <li>Number of events: <pre>{ issue.count }</pre></li>
+                                    <li>Number of events: <code><b>{ issue.count }</b></code></li>
                                 </ul>
                                 <hr className="my-4" />
                                 <h3>Logger</h3>
@@ -78,12 +79,14 @@ class IssueComponent extends Component {
               <div className="row">
                     <div className="col-2 offset-2 text-left">
                           <h3>Tags:</h3>
-                          <ul>
+                          <ul className="list-unstyled">
                           { tagItems }
                           </ul>
                     </div>
-                    <div className="col-4 text-left">
-                          { tagKey !== null ? <Tag tagKey={tagKey} issueId={ this.state.issueId } /> : <div/> }
+                     <div id="tagPlaceholder" className="col-4 text-left">
+                    {
+                        tagKey !== null ? <Tag tagKey={tagKey} issueId={issue.id} /> : <div/>
+                    }
                     </div>
               </div>
             </div>
