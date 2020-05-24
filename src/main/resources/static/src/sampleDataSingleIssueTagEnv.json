@@ -1,0 +1,24 @@
+{
+  "topValues": [
+    {
+      "count": 9686,
+      "name": "prod",
+      "value": "prod",
+      "lastSeen": "2020-05-20T21:41:05Z",
+      "key": "environment",
+      "firstSeen": "2020-05-15T11:27:24Z"
+    },
+    {
+      "count": 360,
+      "name": "dev",
+      "value": "dev",
+      "lastSeen": "2020-05-20T09:01:55Z",
+      "key": "environment",
+      "firstSeen": "2020-05-15T11:22:09Z"
+    }
+  ],
+  "uniqueValues": 2,
+  "name": "Environment",
+  "key": "environment",
+  "totalValues": 10046
+}

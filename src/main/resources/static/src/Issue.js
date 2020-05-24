@@ -5,6 +5,7 @@
 import React, { Component } from 'react';
 
 import Tag from './Tag';
+import IssueEnv from './IssueEnv'
 
 class IssueComponent extends Component {
   
@@ -74,6 +75,10 @@ class IssueComponent extends Component {
                                 <h3>Logger</h3>
                                 <p>{issue.logger}</p>
                                 <hr className="my-4" />
+                                <h3>Environment</h3>
+                                <IssueEnv issueId={issue.id} />
+                                <hr className="my-4" />
+
                             </div>
               </div>
               <div className="row">
