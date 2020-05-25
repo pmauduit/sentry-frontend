@@ -22,10 +22,8 @@ class App extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <a className="navbar-brand" href="#">Sentry issues</a>
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item">
-                <Link className="nav-link" to="/">Back to list</Link>
-              </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/about">About</Link>
               </li>

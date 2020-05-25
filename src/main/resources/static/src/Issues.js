@@ -50,7 +50,7 @@ class IssuesComponent extends Component {
                       <div className="container-fluid">
                           <div className="row">
                             <div className="col-8 offset-2 text-left">
-                              <h1>Issue listing</h1>
+                              <h1>Listing</h1>
                             </div>
                            </div>
                           <div className="row">
@@ -58,7 +58,6 @@ class IssuesComponent extends Component {
                                   <table className="table">
                                     <thead>
                                         <tr className="text-left">
-                                          <th scope="col">#</th>
                                           <th scope="col">code</th>
                                           <th scope="col">message</th>
                                           <th scope="col">count</th>
@@ -69,7 +68,6 @@ class IssuesComponent extends Component {
                                    issues.map((issue, index) => {
                                       return (
                                         <tr className="text-left" key={index}>
-                                          <th scope="row">{index}</th>
                                           <td><pre><Link to={ `/issue/${issue.id}` }>{issue.shortId}</Link></pre></td>
                                           <td><pre>{issue.title}</pre></td>
                                           <td>{issue.count}</td>

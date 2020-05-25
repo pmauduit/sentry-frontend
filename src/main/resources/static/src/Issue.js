@@ -3,9 +3,11 @@
  */
 
 import React, { Component } from 'react';
+import {
+  Link
+} from "react-router-dom";
 
 import Tag from './Tag';
-import IssueEnv from './IssueEnv'
 
 class IssueComponent extends Component {
   
@@ -64,22 +66,19 @@ class IssueComponent extends Component {
         return (
             <div className="container-fluid">
               <div className="row">
-                            <div className="col-6 offset-2 text-left">
-                                <h3><a href={issue.permalink} target="_blank">{ issue.title }</a></h3>
-                                <hr className="my-4" />
-                                <h3>Occurences</h3>
-                                <ul>
-                                    <li>Number of events: <code><b>{ issue.count }</b></code></li>
-                                </ul>
-                                <hr className="my-4" />
-                                <h3>Logger</h3>
-                                <p>{issue.logger}</p>
-                                <hr className="my-4" />
-                                <h3>Environment</h3>
-                                <IssueEnv issueId={issue.id} />
-                                <hr className="my-4" />
-
-                            </div>
+                <div className="col-6 offset-2 text-left">
+                    <Link className="nav-link text-danger" to="/">Back to list</Link>
+                    <hr className="my-4" />
+                    <h3>Issue title</h3>
+                    <p className="text-center"><i>"{ issue.title }"</i></p>
+                    <hr className="my-4" />
+                    <h3>Occurences</h3>
+                        <p>Number of events: <code><b>{ issue.count }</b></code></p>
+                    <hr className="my-4" />
+                    <h3>Logger</h3>
+                    <p>{issue.logger}</p>
+                    <hr className="my-4" />
+                </div>
               </div>
               <div className="row">
                     <div className="col-2 offset-2 text-left">
