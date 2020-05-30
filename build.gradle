@@ -35,6 +35,8 @@ bootJar {
 	exclude("**/static/package*json")
 	exclude("**/static/public")
 	exclude("**/static/src")
+	exclude("**/static/.idea")
+	exclude("**/static/server.js")
 }
 
 /** npm stuff */

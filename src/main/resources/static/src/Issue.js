@@ -35,7 +35,7 @@ class IssueComponent extends Component {
   componentDidMount() {
     const issueId = this.state.issueId;
 
-    fetch(`../issues/${issueId}`)
+    fetch(`./issues/${issueId}`)
       .then(res => res.json())
       .then(
         (result) => {
@@ -43,7 +43,7 @@ class IssueComponent extends Component {
             return { x: index,
                      y: Math.floor(Math.random() * Math.floor(10)),
                      size: tag.totalValues,
-                     name: tag.name };
+                     name: tag.key };
           });
           this.setState({
             isLoaded: true,
@@ -64,6 +64,12 @@ class IssueComponent extends Component {
       this.setState(state => ({
         tagKey: clickedTag.key
       }));
+  }
+
+  unloadTag() {
+     this.setState(state => ({
+        tagKey: null
+     }));
   }
 
   setTagCloudValue(value) {
@@ -104,7 +110,7 @@ class IssueComponent extends Component {
               </div>
               <div className="row">
                 <div className="col-8 offset-2 text-left">
-                    <p className="text-center"><h1>"{ issue.title }"</h1></p>
+                    <h1 className="text-center">"{ issue.title }"</h1>
                     <hr className="my-4" />
 
                     <h3>Occurences</h3>
@@ -150,7 +156,14 @@ class IssueComponent extends Component {
                     </div>
                      <div id="tagPlaceholder" className="col-4 text-left">
                     {
-                        tagKey !== null ? <Tag tagKey={tagKey} issueId={issue.id} /> :
+                        tagKey !== null ?
+                                <div>
+                                    <span className="float-right">
+                                        <button className="btn btn-outline-danger btn-sm" onClick={() => this.unloadTag()}>Close</button>
+                                    </span>
+                                    <Tag tagKey={tagKey} issueId={issue.id} />
+                                </div>
+                                :
                                 <div>
                                     <h3>Tag cloud</h3>
                                     <XYPlot width={800} height={400} animation={ true }
@@ -160,6 +173,7 @@ class IssueComponent extends Component {
                                         data={ tagCloudData }
                                         color="#28a745"
                                         onNearestXY={(value) => { this.setTagCloudValue(value)}}
+                                        onValueClick={(value) => { this.loadTag({key: value.name})}}
                                       />
                                       {tagCloudValue ? <Hint value={tagCloudValue}>
                                         <div className="border sticky-top p-2" style={{ backgroundColor: "white" }}>

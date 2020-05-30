@@ -23,7 +23,7 @@ class TagComponent extends Component {
   loadTagValues() {
       const issueId = this.props.issueId;
       const tagKey = this.props.tagKey;
-      fetch(`../issues/${issueId}/tags/${tagKey}`)
+      fetch(`./issues/${issueId}/tags/${tagKey}`)
         .then(res => res.json())
         .then(
           (result) => {
@@ -63,7 +63,6 @@ class TagComponent extends Component {
   }
 
   toggleChartMode() {
-    console.log(`current state ${this.state.chartMode}`);
     this.setState(state  => ({
         chartMode: ! this.state.chartMode
     }));

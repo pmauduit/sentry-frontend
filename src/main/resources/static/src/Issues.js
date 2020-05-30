@@ -16,7 +16,7 @@ class IssuesComponent extends Component {
   }
 
   componentDidMount() {
-    fetch("../issues")
+    fetch("./issues")
       .then(res => res.json())
       .then(
         (result) => {
@@ -61,8 +61,9 @@ class IssuesComponent extends Component {
                           <div className="row">
                             <div className="col-8 offset-2 text-left">
                               <h1>Listing</h1>
-                              <span className="float-right">Sort by:
-                                  <select onChange={(event) => this.toggleSort(event)}>
+                              <span className="float-right">
+                                  <label for="toggleSort" className="mr-2">Sort by: </label>
+                                  <select id="toggleSort" name="toggleSort" onChange={(event) => this.toggleSort(event)}>
                                       <option value="frequency">Frequency (most frequent first)</option>
                                       <option value="frequency-invert">Frequency (least frequent first)</option>
                                       <option value="date">Date (most recently seen first)</option>

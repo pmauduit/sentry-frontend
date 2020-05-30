@@ -7,9 +7,8 @@ import org.springframework.web.bind.annotation.RequestMethod
 @Controller
 @RequestMapping("/")
 class DefaultController {
-
     @RequestMapping(method = RequestMethod.GET)
     String defaultController() {
-       return "redirect:/build/index.html"
+       return "redirect:/index.html"
     }
 }
