@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-//import Data from './sampleData';
-
 import {
   Link
 } from "react-router-dom";
@@ -12,12 +10,12 @@ class IssuesComponent extends Component {
     this.state = {
       error: null,
       isLoaded: false,
-      issues: []
+      issues: [],
+      sortBy: 'frequency'
     };
   }
 
   componentDidMount() {
-    // prod
     fetch("../issues")
       .then(res => res.json())
       .then(
@@ -34,23 +32,43 @@ class IssuesComponent extends Component {
           });
         }
       )
-    // dev
-    //this.setState({ isLoaded: true, issues: Data });
+  }
+
+  toggleSort(event) {
+    this.setState({
+      sortBy: event.target.value
+    })
   }
 
   render() {
-    const { error, isLoaded, issues } = this.state;
+    const { error, isLoaded, issues, sortBy } = this.state;
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (! isLoaded) {
       return <div>Loading...</div>;
     } else {
-        issues.sort((a, b) => (parseInt(a.count, 10) < parseInt(b.count, 10)) ? 1 : -1);
+        if (sortBy === 'frequency') {
+            issues.sort((a, b) => (parseInt(a.count, 10) < parseInt(b.count, 10)) ? 1 : -1);
+        } else if (sortBy === 'frequency-invert') {
+            issues.sort((a, b) => (parseInt(a.count, 10) > parseInt(b.count, 10)) ? 1 : -1);
+        } else if (sortBy === 'date') {
+            issues.sort((a, b) => ((new Date(a.lastSeen) < new Date(b.lastSeen)) ? 1: -1));
+        } else if (sortBy === 'date-invert') {
+            issues.sort((a, b) => ((new Date(a.lastSeen) > new Date(b.lastSeen)) ? 1: -1));
+        }
         return (
                       <div className="container-fluid">
                           <div className="row">
                             <div className="col-8 offset-2 text-left">
                               <h1>Listing</h1>
+                              <span className="float-right">Sort by:
+                                  <select onChange={(event) => this.toggleSort(event)}>
+                                      <option value="frequency">Frequency (most frequent first)</option>
+                                      <option value="frequency-invert">Frequency (least frequent first)</option>
+                                      <option value="date">Date (most recently seen first)</option>
+                                      <option value="date-invert">Date (least recently seen first)</option>
+                                  </select>
+                              </span>
                             </div>
                            </div>
                           <div className="row">
