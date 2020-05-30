@@ -3,6 +3,13 @@
  */
 
 import React, { Component } from 'react';
+
+import {  XYPlot,
+          YAxis,
+          HorizontalGridLines,
+          VerticalBarSeries
+} from 'react-vis';
+
 import {
   Link
 } from "react-router-dom";
@@ -63,6 +70,12 @@ class IssueComponent extends Component {
                     </button>
                </li>
         });
+        const data24hours = issue.stats['24h'].map((item) => {
+          return { x: item[0], y: item[1] };
+        });
+        const data30days = issue.stats['30d'].map((item) => {
+          return { x: item[0], y: item[1] };
+        });
         return (
             <div className="container-fluid">
               <div className="row">
@@ -74,6 +87,24 @@ class IssueComponent extends Component {
                     <hr className="my-4" />
                     <h3>Occurences</h3>
                         <p>Number of events: <code><b>{ issue.count }</b></code></p>
+                    <hr className="my-4" />
+                    <h3>Events frequency</h3>
+                    <h4>Past 24 hours</h4>
+                      <center>
+                        <XYPlot height={100} width={600}  xType="ordinal">
+                           <YAxis style={{ text: { fontSize: "8px" } }} />
+                           <HorizontalGridLines style={{ strokeWidth: 0.4, stroke: "#444" }} />
+                           <VerticalBarSeries data={data24hours} color="#28a745" />
+                        </XYPlot>
+                      </center>
+                    <h4>Past 30 days</h4>
+                      <center>
+                        <XYPlot height={100} width={600}  xType="ordinal">
+                           <YAxis style={{ text: { fontSize: "8px" } }} />
+                           <HorizontalGridLines style={{ strokeWidth: 0.4, stroke: "#444" }} />
+                           <VerticalBarSeries data={data30days} color="#28a745" />
+                        </XYPlot>
+                      </center>
                     <hr className="my-4" />
                     <h3>Logger</h3>
                     <p>{issue.logger}</p>
