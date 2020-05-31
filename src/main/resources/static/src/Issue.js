@@ -104,7 +104,9 @@ class IssueComponent extends Component {
               <div className="row">
                 <div className="col-8 offset-2 text-left">
                     <div className="float-right">
-                        <Link className="nav-link text-danger" to="/"><h3>Back to list</h3></Link>
+                        <Link className="nav-link" to="/">
+                            <button className="btn btn-outline-danger btn-sm">Back to list</button>
+                        </Link>
                     </div>
                 </div>
               </div>

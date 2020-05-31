@@ -94,8 +94,8 @@ class TagComponent extends Component {
           <div>
                 <h3>top values for { tagKey }</h3>
                 <p className="text-right">
-                  <button onClick={() => this.toggleChartMode()}>
-                  { chartMode ? "table mode" : "chart mode" }
+                  <button onClick={() => this.toggleChartMode()} className="btn btn-primary btn-sm">
+                  { chartMode ? "Table" : "Chart" }
                   </button>
                 </p>
                 <hr className="my-4" />
