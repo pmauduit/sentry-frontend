@@ -1,9 +1,9 @@
 plugins {
-	id 'org.springframework.boot' version '2.3.0.RELEASE'
-	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'org.springframework.boot' version '2.4.4'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'groovy'
 	id "com.github.node-gradle.node" version "2.2.4"
-
+	id "com.github.ben-manes.versions" version "0.38.0"
 }
 
 group = 'fr.spironet'
