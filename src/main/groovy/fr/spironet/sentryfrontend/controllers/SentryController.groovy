@@ -1,5 +1,5 @@
 package fr.spironet.sentryfrontend.controllers
-
+import java.net.URLEncoder
 import groovy.json.JsonSlurper
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.HttpStatus
@@ -31,7 +31,9 @@ class SentryController {
   private def api_url = "https://sentry.io/api/0"
 
   private String getIssues(String org, String project, String query) {
-    def actualUrlStr = "${api_url}/projects/${org}/${project}/issues/?query=${query} is:unresolved"
+    def actualQuery = URLEncoder.encode("${query} is:unresolved", "utf-8")
+
+    def actualUrlStr = "${api_url}/projects/${org}/${project}/issues/?query=${actualQuery}"
 
     return actualUrlStr.toURL().
             getText(requestProperties: [Authorization: "Bearer ${SENTRY_TOKEN}"])
