@@ -18,8 +18,9 @@ It will require a gradle build before.
 ## Environment variables to set
 
 * `SENTRY_TOKEN`
-* `CUSTOMER` (geo2france, grandest, ...)
-* `WEBAPP` (geoserver, mapfishapp, ...)
+* `QUERY` (e.g. "environment:dev")
+* `ORGANIZATION` (e.g. "camptocamp")
+* `PROJECT` (e.g. "geograndest")
 
 # Develop on the frontend part
 
